@@ -4,6 +4,14 @@ void main() {
   runApp(const MyApp());
 }
 
+String name = 'Emmanuel Uka';
+int age = 19;
+double gpa = 3.5;
+List arr = ['a', 'b', 'c', 'd'];
+Map myMap = {'String': 'String', 'name': 'Emmanuel'};
+Map<String, String> myMap1 = {'String': 'Emmanuel'};
+Map<String, dynamic> myMap2 = {'String': 'Emmanuel', 'String2': 3.51};
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -11,6 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -28,7 +37,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: .fromSeed(
+          seedColor: Colors.deepPurple,
+          brightness: Brightness.dark,
+        ),
       ),
       home: const MyHomePage(title: 'Gym App'),
     );
@@ -88,27 +100,24 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
+        //argument = lowercase
+        //widget = uppercase
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: .center,
           children: [
-            const Text('Welcome to the Workout Tracker App!'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25), 
+                color: Colors.red,),
+              
+              ),
+            Container(
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25), 
+                color: Colors.red,),
+              
+              ),
           ],
         ),
       ),

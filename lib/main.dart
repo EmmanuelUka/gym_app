@@ -66,7 +66,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  //int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+     // _counter++;
     });
   }
 
@@ -102,23 +102,30 @@ class _MyHomePageState extends State<MyHomePage> {
         // in the middle of the parent.
         //argument = lowercase
         //widget = uppercase
-        child: Column(
-          children: [
-            Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25), 
-                color: Colors.red,),
-              
-              ),
-            Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25), 
-                color: Colors.red,),
-              
-              ),
-          ],
+        child: Container(
+          color: Colors.black38,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisSize: MainAxisSize.min, //22:31
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25), 
+                  color: Colors.red,),
+                
+                ),
+              Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25), 
+                  color: Colors.red,),
+                
+                ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(

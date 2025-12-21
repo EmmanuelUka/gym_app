@@ -104,9 +104,8 @@ class _MyHomePageState extends State<MyHomePage> {
         //widget = uppercase
         child: Container(
           color: Colors.black38,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            mainAxisSize: MainAxisSize.min, //22:31
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Container(
                 height: 100,
@@ -114,8 +113,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25), 
                   color: Colors.red,),
-                
+                child: Center(
+                  child: Text('Hello'),
+                  ),
                 ),
+
               Container(
                 height: 100,
                 width: 100,

@@ -1,0 +1,28 @@
+name: user_repository
+descriptionn: A Dart package that provides user repository functionalities.
+publish_to: none # Remove this line if you wish to publish to pub.dev
+version: 0.0.1
+
+environment:
+  sdk: ">=2.18.0 <3.40.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #equatable: ^2.0.5
+  #firebase_auth: ^4.4.0
+  #google_sign_in: ^6.1.0
+  #cloud_firestore: ^4.5.0
+  #firebase_storage: ^11.0.7
+  #rxdart: ^0.27.7
+  #path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+
+flutter:
+  uses-material-design: true
